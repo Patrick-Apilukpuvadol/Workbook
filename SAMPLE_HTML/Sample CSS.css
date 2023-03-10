@@ -1,0 +1,121 @@
+/* PRIORITY */
+/* Inline Styling > Ids > Classes > Tags */
+
+ol {
+    background-color: yellow;
+}
+img {
+    /* min-width: 200px; */
+    /* max-width: 300px; */
+    width: clamp(200px, 50%, 300px)
+    /* height: 100px; */
+}
+p.question {
+    color: red;
+}
+.answer {
+    color: green;
+}
+#first-question {
+    color: brown;
+}
+.welcome {
+    height: 100px;
+    padding: 16px;
+    border: 4px solid red;
+    margin-bottom: 32px;
+    text-align: center;
+    
+    /* position: relative; 
+    top: 200px;
+    left: 100px; */
+
+    /* position: absolute;
+    top: 100px;
+    bottom: 100px; */
+
+    /* position: fixed; */
+
+    /* position: sticky;
+    top: 100px; */
+/* }
+
+.welcome > ul {
+    list-style-type: none;
+} */
+
+body ul {
+    list-style-type: none;
+}
+
+.parent {
+    height: 100px;
+    border: 1px solid red;
+    padding: 16px;
+    width: 300px;
+}
+
+.child {
+    height:50px;
+    border: 1px solid green;
+    width: 50%;
+}
+
+h1 {font-size: 28px;}
+
+@media screen and (min-width: 400px) {
+    h1 {
+        font-size: 32px;
+    }
+    background-color: red;
+}
+
+@media and (min-width: 700px)  {
+    h1 {
+        font-size: 40px;
+    }
+    ol {
+        background-color: blue;
+    }
+}
+
+@media print {
+    h1 {
+        color: yellow; !important
+        font-size: 20px;
+    }
+}
+    
+/* two axis in "flex" */
+/* main axis */
+/* cross axis */
+/* justify content - arrnges the child in the main axis = flex-start, flex end, center, space-around,
+sparce-between, space-evenly */
+/* align-itens : arranges the children in the cros axis */
+
+.parent-flex {
+    border: 4px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-content: center;
+}
+
+.child-flex {
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    margin: 10px;
+    font-size: 48px;
+    text-align:center;
+}
+
+.flex-4 {
+    flex-grow: 1;
+}
+
+.flex-2 {
+    flex-grow: 1;
+}

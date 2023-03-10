@@ -1,0 +1,104 @@
+#first {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 24px;
+    transition: 2s;
+    
+}
+
+#first:hover {
+    width: 200px;
+    background-color: green;
+    transform: scale(2) translate(100px, 100px) rotate(45deg);
+}
+
+.card-parent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+
+.card {
+    border: 1px solid red
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 2s;
+    
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 5px red;
+}
+
+#second {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    margin: 50px;
+    animation-name: animation-for-second;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation-for-second {
+    0% {
+        width: 100px;
+    }
+    50% {
+        width: 200px;
+    }
+    100% { 
+        width: 100px;
+    }
+}
+
+.parent-typing-effect {
+    display: flex;
+}
+
+#typing-effect {
+    font-size: 48px;
+    white-space: nowrap;
+    animation: typing-animation .8s, change-width 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change-width {
+    0% {
+        width: 0
+    }
+    100% {
+        width: 100%
+    }
+}
+
+@keyframes typing-animation {
+    0% {
+        border-right: none;
+    }
+    50% {
+        border-right: 2px solid black;
+    }
+}
+
+:root { 
+    font-size: 8px;
+}
+
+body {
+    font-size: 24px;
+}
+
+.typography {
+    margin: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}

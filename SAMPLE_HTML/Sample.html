@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Head tag is for Document title, metadata, links to CSS files -->
+        <meta name="viewport" content="width=device-width", initial-scale="1.0"
+        <title>Sample HTML page</title>
+        <link rel="stylesheet" href="Sample CSS.css"
+
+        <!-- Using the style tag -->
+        <style>
+            h2 {
+                color:blanchedalmond;
+                background-color: aqua;
+            }
+            /* p {
+                color: red;
+            } */
+            span {
+                background-color: blueviolet;
+            }
+
+            a {
+                font-size: 20px;
+            }
+
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: salmon;
+                transition: 2s;
+            }
+
+            .box:hover {
+                width: 200px;
+                height: 200px;
+                background-color: lightblue;
+                margin-left: 100px;
+            }
+        </style>      
+
+    </head>
+
+    <body>
+
+        <div class="box"></div>
+
+        <div class="parent-flex">
+            <div class="child-flex flex-1">1</div>
+            <div class="child-flex flex-2">2</div>
+            <div class="child-flex flex-3">3</div>
+            <div class="child-flex flex-4">4</div>
+            <div class="child-flex flex-5">5</div>
+        </div>
+
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+
+        <div class="welcome">
+            <ul>
+                <li>Home</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+
+        <!-- Inline style tag -->
+        <h1 style="color: red; background-color: blue;">
+            Workbook
+        </h1>
+<!-- Below is an example of a Block tag meaning that the element takes the entire width of the page -->
+        <div>
+            Hello
+        </div>
+        World
+
+<!-- Below is an example of a Inline tag meaning that the element takes only the space it requires on the width of page -->
+        <span>
+            Hello
+        </span>
+        World
+
+        <h2>Question 1</h2>
+        <p class="question">What is HTML?</p>
+        <p class="answer">-> HTML is a mark up language</p>
+
+        <h2>Question 2</h2>
+        <p id="first-question">List some programming languages</p>
+        <p class="answer">-> Here are some progamming languages</p>
+        <ol> 
+            <li>Python</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h2>Question 3</h2>
+        <p class="question"">List some animals</p>
+        <p class="answer">-> Here are some animals</p>
+        <ul>
+            <li>Dogs</li>
+                <img src="https://d35i9t6ajlsoi2.cloudfront.net/wp-content/uploads/2019/11/sydney-dog-570x500-1.jpeg"
+                alt="Picture of dog">
+                <ol>
+                    <li>Golden Retriever</li>
+                    <li>Poodle</li>
+                    <li>Great Dane</li>
+                </ol>
+            <li>Lions</li>
+            <li>Penguins</li>
+            <li>Camels</li>
+        </ul>
+
+        <h2>Question 4</h2>
+        <p class="question"">Create a link to Google</p>
+        <p class="answer">-> Here it is.</p>
+            <a href="https://google.com">Google</a>
+        <p></p>
+            
+            <button>Click me</button>
+    </body>
+</html>
