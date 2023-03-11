@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    background-color: #a5a5a5;
+}
+
+header {
+    background-color: #ffb6b6;
+    padding: 16px;
+    text-align: center;
+
+    .logo-name {
+        margin-bottom: 24px;
+
+        .name {
+            font-size: 28px;
+
+            .coder-text {
+                color: #4DA8C5;
+            }
+
+            .academy-text {
+                color: #2A4461;
+            }
+        }
+    }
+
+    .nav-items {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+
+    a {
+        text-decoration: none;
+        color: #114859;
+    }
+    }
+}
