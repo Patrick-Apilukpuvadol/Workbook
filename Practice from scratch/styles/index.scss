@@ -1,13 +1,29 @@
+$primary-background: #FFB6B6;
+// the symbol "$" gives an attribute which can be referenced throughout the document.
+
+@mixin background-stuff() {
+    background-color: $primary-background;
+    padding: 16px;
+    text-align: center;
+}
+
 body {
     margin: 0;
     background-color: #a5a5a5;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
-    background-color: #ffb6b6;
+    @include background-stuff()
+
+    background-color: $primary-background;
     padding: 16px;
     text-align: center;
-
+    
     .logo-name {
         margin-bottom: 24px;
 
@@ -34,5 +50,31 @@ header {
         text-decoration: none;
         color: #114859;
     }
+    }
+}
+
+footer {
+    @include background-stuff();
+
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+
+        margin-bottom: 24px;
+
+        a {
+            i {
+                color: #1C3C5C;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .info {
+        color: rgb(41, 40, 40);
+
+        p {
+            margin: 5px 0;
+        }
     }
 }

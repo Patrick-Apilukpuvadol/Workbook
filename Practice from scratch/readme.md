@@ -25,6 +25,31 @@ Header has logo and name of the company along with the navigation bar. Here is t
             <a href="./Pages/contact.html">Contact Us</a>
         </nav>
     </header>
+```
+
+### Footer
+Footer has social media links and contact details. Here is the code that we have:
+
 ```html
+    <footer>
+        <div class="social-media">
+            <div class="social-media">
+                <a href="">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="info">
+            <p>Contact: 0404 040 404</p>
+            <p>Address: 1 Street St, Suburb, State Postcode</p>
+        </div>
+    </footer>
+```
 
 
