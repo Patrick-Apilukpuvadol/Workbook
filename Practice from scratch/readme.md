@@ -52,4 +52,22 @@ Footer has social media links and contact details. Here is the code that we have
     </footer>
 ```
 
+## Pages
 
+### Home
+Homepage for now, just displays some lorem ipsum text. Here is the code that we have used:
+
+```html
+   <main>
+      <section>
+        <div class="jumbotron">
+          <img src="./images/jumbotron.jpg" />
+        </div>
+        <div class="details">
+          <p>
+            lorem ipsum text
+          </p>
+        </div>
+      </section>
+    </main>
+```

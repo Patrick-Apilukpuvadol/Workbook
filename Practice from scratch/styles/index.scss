@@ -18,14 +18,16 @@ body {
 }
 
 header {
-    @include background-stuff()
 
     background-color: $primary-background;
     padding: 16px;
     text-align: center;
-    
+
     .logo-name {
-        margin-bottom: 24px;
+        @media screen and (max-width: 600px) {
+            margin-bottom: 24px;
+            
+        }
 
         .name {
             font-size: 28px;
@@ -53,6 +55,29 @@ header {
     }
 }
 
+@media screen and (min-width: 600px) {
+    Header {
+        display: flex;
+        align-items: flex-end
+        justify-content space-between;
+    
+        .nav-items {
+            width: 50%;
+        }
+    }
+}
+
+main {
+    section {
+        .jumbotron {
+            img {
+                height: 300px;
+                width: 100%
+            }
+        }
+    }
+}
+
 footer {
     @include background-stuff();
 
@@ -76,5 +101,16 @@ footer {
         p {
             margin: 5px 0;
         }
+    }
+
+    @media screen and (min-width: 600px) {
+        footer {
+            .social-media {
+                width: 50%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+        
     }
 }

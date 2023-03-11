@@ -7,19 +7,24 @@ body {
   justify-content: space-between;
 }
 
-@in .logo-name {
-  header {
+header {
+  background-color: #FFB6B6;
+  padding: 16px;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  header .logo-name {
     margin-bottom: 24px;
   }
-  header .name {
-    font-size: 28px;
-  }
-  header .name .coder-text {
-    color: #4DA8C5;
-  }
-  header .name .academy-text {
-    color: #2A4461;
-  }
+}
+header .logo-name .name {
+  font-size: 28px;
+}
+header .logo-name .name .coder-text {
+  color: #4DA8C5;
+}
+header .logo-name .name .academy-text {
+  color: #2A4461;
 }
 header .nav-items {
   width: 100%;
@@ -32,8 +37,44 @@ header .nav-items a {
   color: #114859;
 }
 
+@media screen and (min-width: 600px) {
+  Header {
+    display: flex;
+    align-items: flex-end justify-content space-between;
+  }
+  Header .nav-items {
+    width: 50%;
+  }
+}
+main section .jumbotron img {
+  height: 300px;
+  width: 100%;
+}
+
 footer {
   background-color: #FFB6B6;
   padding: 16px;
   text-align: center;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 24px;
+}
+footer .social-media a i {
+  color: #1C3C5C;
+  font-size: 24px;
+}
+footer .info {
+  color: rgb(41, 40, 40);
+}
+footer .info p {
+  margin: 5px 0;
+}
+@media screen and (min-width: 600px) {
+  footer footer .social-media {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }/*# sourceMappingURL=index.css.map */
