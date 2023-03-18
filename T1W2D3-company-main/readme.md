@@ -69,7 +69,8 @@ Home page, for now, just displays some lorem ipsum text. Here is the code that w
 ### Services
 Services page displays the list of services that we provide. 
 
-###
+### Contact
+Added the contact page and form elements
 
 ## Styling
 

@@ -1,10 +1,10 @@
-@import "../defaults/colors"
-@import "../defaults/breakpoint"
+@import "../defaults/colors";
+@import "../index";
 
 main {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 
     article {
         border: 1px solid red;
@@ -23,4 +23,3 @@ main {
             }
         }
     }
-}

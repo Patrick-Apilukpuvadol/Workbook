@@ -1,6 +1,6 @@
-@import "../defaults/colors"
-@import "./utils"
-@import "../defaults/breakpoint"
+@import "../defaults/colors";
+@import "./utils";
+@import "../defaults/breakpoint";
 
 footer {
     @include background-stuff();

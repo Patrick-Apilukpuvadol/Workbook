@@ -1,7 +1,7 @@
-@import "./defaults/colors"
-@import "./components/header"
-@import "./components/footer"
-@import "./components/utils"
+@import "./defaults/colors";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/utils";
 
 @mixin background-stuff() {
     background-color: $primary-background;
